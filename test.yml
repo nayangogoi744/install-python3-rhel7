@@ -1,0 +1,8 @@
+---
+- name: Python 3 install
+  hosts: all
+  gather_facts: False
+  become: true
+  roles:
+   - { role: common }
+   - { role: python }
